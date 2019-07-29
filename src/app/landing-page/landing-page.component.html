@@ -1,0 +1,16 @@
+<div>
+  <button type='button'>Add a new trip</button>
+</div>
+<div *ngFor="let trip of trips">
+  <a [routerLink]="['/detail', trip.id]">
+      <p>
+          Order: {{ trip.order }}
+          Country: {{ trip.country }}
+          City: {{ trip.city }}
+          Budget: {{ trip.budget }}
+          No Of Travellers: {{ trip.noOfTraveller }}
+          Start Date: {{ trip.startDate }}
+          End Date: {{ trip.endDate }}
+      </p>
+  </a>
+</div>
