@@ -1,5 +1,5 @@
 <div>
-  <button type='button'>Add a new trip</button>
+  <button type='button' (click)="createNewTrip()">Add a new trip</button>
 </div>
 <div *ngFor="let trip of trips">
   <a [routerLink]="['/detail', trip.id]">

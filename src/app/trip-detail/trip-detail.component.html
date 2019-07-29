@@ -1,3 +1,13 @@
-<p>
-  trip-detail works!
-</p>
+<div>
+  <a [routerLink]="['/home']">Back to home</a>
+</div>
+<div>
+  <p><strong>Order:</strong> {{ trip.order }}</p>
+  <p><strong>Country:</strong> {{ trip.country }}</p>
+  <p><strong>City:</strong> {{ trip.city }}</p>
+  <p><strong>Budget:</strong> {{ trip.budget }}</p>
+  <p><strong>No Of Travellers:</strong> {{ trip.noOfTraveller }}</p>
+  <p><strong>Start Date:</strong> {{ trip.startDate }}</p>
+  <p><strong>End Date:</strong> {{ trip.endDate }}</p>
+  <p><strong>Things to do:</strong> {{ trip.thingsToDo }}</p>
+</div>

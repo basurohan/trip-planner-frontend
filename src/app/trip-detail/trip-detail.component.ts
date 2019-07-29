@@ -15,7 +15,6 @@ export class TripDetailComponent implements OnInit {
 
   ngOnInit() {
     this.route.data.subscribe(data => this.trip = data[0]);
-    console.log(this.trip);
   }
 
 }

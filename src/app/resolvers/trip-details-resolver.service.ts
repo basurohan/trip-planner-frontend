@@ -13,7 +13,7 @@ export class TripDetailsResolverService implements Resolve<Trip> {
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): any {
 
-    const id = route.queryParamMap.get('id');
+    const id = route.params.id;
 
     return this.http
       .get<Trip>(`http://localhost:3000/trip-details/${id}`)
